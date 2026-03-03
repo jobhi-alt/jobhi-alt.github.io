@@ -34,17 +34,17 @@ header {
   max-width: 600px;
 }
 
-button {
+.download-btn {
+  display: inline-block;
   padding: 10px 20px;
-  border: none;
   border-radius: 6px;
   background: #238636;
   color: white;
-  font-size: 16px;
-  cursor: pointer;
+  text-decoration: none;
+  margin-top: 10px;
 }
 
-button:hover {
+.download-btn:hover {
   background: #2ea043;
 }
 
@@ -67,20 +67,24 @@ footer {
 
 <div class="section">
   <div class="card">
-    <h2>Official Packages</h2>
-    <p>Verified Unity .unitypackage files from trusted contributors.</p>
-    <button onclick="alert('Coming Soon')">View Packages</button>
+    <h2>VR Movement System</h2>
+    <p>Advanced VR locomotion system for Unity.</p>
+    <a class="download-btn" href="packages/VRMovementSystem.unitypackage" download>
+      Download
+    </a>
   </div>
 
   <div class="card">
-    <h2>Community Submissions</h2>
-    <p>User uploads are scanned and moderated before approval.</p>
-    <button onclick="alert('Upload System Requires Backend')">Submit Package</button>
+    <h2>Horror Jumpscare System</h2>
+    <p>Customizable jumpscare logic for horror games.</p>
+    <a class="download-btn" href="packages/HorrorJumpscareSystem.unitypackage" download>
+      Download
+    </a>
   </div>
 </div>
 
 <footer>
-  Only .unitypackage files allowed. All uploads are reviewed.
+  Only official packages uploaded by the site owner are available.
 </footer>
 
 </body>
